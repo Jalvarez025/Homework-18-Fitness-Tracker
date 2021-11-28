@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 const ResistanceSchema = new Schema({
   type: String,
   name: String,
-  duration: DataTypes.INTEGER,
-  weight: INTEGER,
-  reps: INTEGER,
-  sets: INTEGER
+  duration: Number,
+  weight: Number,
+  reps: Number,
+  sets: Number
 });
 
 const Resistance = mongoose.model("Resistance", ResistanceSchema);

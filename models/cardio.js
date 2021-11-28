@@ -5,8 +5,8 @@ const Schema = mongoose.Schema;
 const CardioSchema = new Schema({
   type: String,
   name: String,
-  duration: DateType.INTEGER,
-  distance: DataType.INTEGER
+  duration: Number,
+  distance: Number
 });
 
 const Cardio = mongoose.model("Cardio", CardioSchema);
