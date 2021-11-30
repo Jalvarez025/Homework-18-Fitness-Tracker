@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", { useNewUrlParser: true});
 
 // db.User.create({ name: "Ernest Hemingway" })
 //   .then(dbUser => {
@@ -68,6 +68,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { 
 // });
 
 app.use(require("./routes/api.js"));
+app.use(require("./routes/view.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
