@@ -11,7 +11,7 @@ This application was built to deliver a system that can keep track of the user's
   
 
 ## Installation
-URL link  : https://note-taker-jesse.herokuapp.com/
+URL link  : 
 
 ## Usage
 The app is easy to use and the user can add workouts everyday while keeping track of all exercies done that day. The user must pick between a cardio or resistance workout and then more information is required to store all the important data in the database.  
